@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body bgcolor = "black">
+        <h1 style = "color:white"> Your response has been recorded succesfully !! </h1>
+    </body>
+</html>

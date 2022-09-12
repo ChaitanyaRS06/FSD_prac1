@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Elective choosing form </title>
+<style>
+div {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+</style>
+  </head>
+  <body>
+
+    <h1>Elective Choosing Form!</h1>
+
+
+<div>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+ 
+
+
+  <input type="checkbox" id="subject1" name="subject1" value="SDMT">
+  <label for="subject1"> I want to choose SDMT <a href="https://en.wikipedia.org/wiki/Software_testing#:~:text=Software%20testing%20is%20the%20act,the%20risks%20of%20software%20implementation.">       What is SDMt ?</a> </label><br>
+  <input type="checkbox" id="subject2" name="subject2" value="BDT">
+  <label for="subject2"> I want to choose BDT <a href="https://en.wikipedia.org/wiki/Big_data">       What is BDT ?</a> </label><br>
+  <input type="checkbox" id="subject3" name="subject3" value="Computer Graphics">
+  <label for="subject3"> I want to choose Computer Graphics <a href="https://en.wikipedia.org/wiki/Computer_graphics#:~:text=Computer%20graphics%20deals%20with%20generating,displays%2C%20and%20many%20specialized%20applications.">       What is Computer Graphics ?</a></label>
+<br><br>
+ 
+ <button onclick="window.open('submit1.html')"> Submit</button>
+</form>
+
+<p><img src="sdmt.jpg" alt="SDMT logo" width="250" height="200">
+<img src="bigdata.jpg" alt="BDT" width="250" height="200" style="vertical-align:middle;margin:50px 50px">
+<img src="computergraphics.jpg" alt="BDT" width="250" height="200" style="vertical-align:right;margin:50px 50px"></P>
+<img src="https://www.google.com/search?q=husky&sxsrf=ALiCzsaGt497d8KAlLyjLcf4yi9XGZ-Xdg:1659433443864&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjwn8yn76f5AhUDmlYBHUlaDW4Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25#imgrc=Q6z0m5fxRTZk8M" alt="BDT" width="924" height="924" style="vertical-align:middle;margin:50px 50px">
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
