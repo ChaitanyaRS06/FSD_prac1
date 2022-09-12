@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+</style>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  let x2 = document.forms["myForm2"]["fphone"].value;
+  if (x2 == "") {
+    alert("Phone number must be filled out");
+    return false;
+  }
+  
+}
+function validateEmail(email) 
+    {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+    
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+<div>
+<form name="myForm"  onsubmit="return validateForm()" method="post">
+  Userame: <input type="text" name="fname">
+</form></div>
+<div>
+<form name="myForm2"  onsubmit="return validateForm()" method="post">
+  Phone Number: <input type="tel" id="phone" name="fphone" placeholder="91-9002006565" pattern="[0-9]{2}-[0-9]{10}" required><br><br>
+  </div>
+  <div>
+    <form name="myForm3"  onsubmit="return validateEmail()" method="post">
+      Email: <input type="email" id="email" name="femail" placeholder="abc@gmail.com"  required><br><br>
+  </div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
